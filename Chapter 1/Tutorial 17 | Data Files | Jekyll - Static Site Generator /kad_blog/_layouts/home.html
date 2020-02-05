@@ -1,0 +1,13 @@
+<table border="1">
+  <tr>
+    <th>Name</th>
+    <th>Occupation</th>
+  </tr>
+
+  {% for person in site.data.people %}
+    <tr>
+      <td>{{ person.name}}</td> <td>{{ person.occupation }}</td>
+    </tr>
+  {% endfor %}
+  
+</table>

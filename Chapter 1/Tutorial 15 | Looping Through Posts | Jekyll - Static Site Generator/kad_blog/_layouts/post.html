@@ -1,0 +1,16 @@
+---
+layout: "wrapper"
+author: "Khairul"
+---
+
+<h2>{{ page.title }}</h2>
+<h4> 
+  {% if page.author %}
+    {{ page.author }}
+  {% else %}
+    {{layout.author }}
+  {% endif %}
+</h4>
+<hr>
+
+{{ content }}
